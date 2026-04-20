@@ -9,7 +9,7 @@ const Countries = ({showCountries}) => {
             <h1>Get started with flag: {countries.countries.length}</h1>
             <div className='grid-countries'>
                 {
-                countries.countries.map(country => <Country country= {country}></Country>)
+                countries.countries.map(country => <Country country= {country} key={country.cca3.cca3}></Country>)
             }
             </div>
             
