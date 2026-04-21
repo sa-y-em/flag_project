@@ -16,7 +16,7 @@ if (visited) {
 
     
     return (
-        <div className='border'>
+        <div className={`border ${visited && `visited`}`}>
             <img src={country.flags.flags.png} alt={country.flags.flags.alt} />
             <p>Name: {country.name.common}</p>
             <p>Capital: {country.capital.capital}</p>
